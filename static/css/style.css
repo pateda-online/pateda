@@ -311,25 +311,29 @@ body {
 /* set up home page's list layout */
 /**********************************/
 .grid-container {
-  display: flex;                 /* Use Flexbox */
-  flex-wrap: wrap;               /* Allow items to wrap to new lines */
-  gap: 10px;                     /* Space between items */
-  justify-content: center;       /* Center items horizontally */
-  max-width: 800px;              /* Set max-width to contain the grid */
-  margin: 0 auto;                /* Center grid container */
+  display: flex;                 
+  flex-wrap: wrap;               
+  gap: 40px;                     
+  justify-content: center;       
+  max-width: 800px;              
+  margin: 0 auto;                
 }
 .grid-item {
-  flex: 1 0 21%;                 /* Each item takes up ~21% width */
-  max-width: 21%;                /* Ensures 4 items per row */
-  box-sizing: border-box;        /* Prevents padding from affecting width */
-  height: 150px;                 /* Set a fixed height */
-  display: flex;                 /* Center content inside items */
+  flex: 1 0 30%;                 
+  max-width: 30%;                
+  box-sizing: border-box;        
+  height: 200px;                 
+  display: flex;                 
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;     /* Background color */
-  border-radius: 8px;            /* Rounded corners */
-  font-size: 20px;               /* Text styling */
-  color: #333;
+  font-size: 20px; 
+  text-decoration: none;             
+}
+.grid-item h3{
+  background-color: var(--color-bg-page);
+  color: var(--color-light-fg-marker-quote);
+  align-items:center;
+  justify-content:end;
 }
 .list-item .tips {
   display: flex;

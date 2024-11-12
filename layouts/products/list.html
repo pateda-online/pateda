@@ -8,7 +8,7 @@
         {{ $image := $image.Resize "200x" }}    
         <a href="{{ .Permalink }}">
         <img src="{{ $image.Permalink }}" alt="{{ .Title }}">
-        <h3 class="caption">{{ .Title }}</h3>
+        <h3>{{ .Title }}</h3>
       </a>
       {{ end }}
       </div>
