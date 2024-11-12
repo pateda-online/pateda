@@ -326,14 +326,14 @@ body {
   display: flex;                 
   align-items: center;
   justify-content: center;
-  font-size: 20px; 
-  text-decoration: none;             
+  font-size: 20px;             
 }
 .grid-item h3{
   background-color: var(--color-bg-page);
   color: var(--color-light-fg-marker-quote);
   align-items:center;
   justify-content:end;
+  text-decoration: none;
 }
 .list-item .tips {
   display: flex;
