@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bag on pateda.online</title>
+    <link>https://pateda-online.netlify.app/categories/bag/</link>
+    <description>Recent content in bag on pateda.online</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://pateda-online.netlify.app/categories/bag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cargo_bag.ptd</title>
+      <link>https://pateda-online.netlify.app/products/cargo_bag/cargo_bag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pateda-online.netlify.app/products/cargo_bag/cargo_bag/</guid>
+      <description>&lt;p&gt;this is pateda cargo bag&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

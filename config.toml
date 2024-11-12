@@ -2,7 +2,7 @@ title = "pateda.online"
 theme = "hugo-theme-flat"
 enableRobotsTXT = true
 paginate = 4
-baseURL = "https://localhost"
+baseURL = "https://pateda-online.netlify.app"
 
 # these values are hugo built in markup config
 [markup.highlight]

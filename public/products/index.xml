@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>products on pateda.online</title>
+    <link>https://pateda-online.netlify.app/products/</link>
+    <description>Recent content in products on pateda.online</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://pateda-online.netlify.app/products/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cargo_bag.ptd</title>
+      <link>https://pateda-online.netlify.app/products/cargo_bag/cargo_bag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pateda-online.netlify.app/products/cargo_bag/cargo_bag/</guid>
+      <description>&lt;p&gt;this is pateda cargo bag&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>docker_hat.ptd</title>
+      <link>https://pateda-online.netlify.app/products/docker_hat/docker_hat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pateda-online.netlify.app/products/docker_hat/docker_hat/</guid>
+      <description>&lt;h2 id=&#34;this-is-pateda-docker-hat&#34;&gt;this is pateda docker hat &lt;a href=&#34;#this-is-pateda-docker-hat&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
