@@ -1,0 +1,40 @@
+title = "pateda.online"
+theme = "hugo-theme-flat"
+enableRobotsTXT = true
+paginate = 4
+baseURL = "https://localhost"
+
+# these values are hugo built in markup config
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+noHl = false
+style = 'monokailight'
+tabWidth = 4
+
+[params]
+description = "pateda.online"
+mainSections = ['products']
+
+[[params.footer_rows]]
+
+[[params.footer_rows.items]]
+name = "pateda"	
+pre = "pateda 2024"
+
+[[menus.main]]
+name = "products"
+url = "/products/"
+weight = 40
+
+[[menus.main]]
+pageref = "about"
+name = "about"
+weight = 80

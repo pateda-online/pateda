@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hat on pateda.online</title>
+    <link>https://localhost/categories/hat/</link>
+    <description>Recent content in hat on pateda.online</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://localhost/categories/hat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker_hat.ptd</title>
+      <link>https://localhost/products/docker_hat/docker_hat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/products/docker_hat/docker_hat/</guid>
+      <description>pateda docker hat</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div>
+    {{ if trim .Content " \n" }}
+        <div class="content archive-hint">{{ .Content }}</div>
+    {{ end }}
+
+    <section id="archive">
+        {{ range .Data.Pages }}
+			<h3 class="key">
+				{{ .Key }}
+			</h3>
+
+			{{ range .Pages }}
+				<div class="value">
+
+					<div class="title">
+
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+
+					</div>
+				</div>
+			{{ end }}
+        {{ end }}
+
+    </section>
+</div>
+
+{{ end }}
