@@ -6,7 +6,7 @@
     <div>
     {{ $image := resources.Get .Params.image }}
     {{ if $image }}
-      {{ $image := $image.Resize "400x" }}
+      {{ $image := $image.Resize "300x" }}
       <img src="{{ $image.Permalink }}" alt="{{ .Title }}">
     {{ end }}
     </div>
