@@ -1,4 +1,4 @@
 User-agent: *
 Allow: *
 
-Sitemap: https://pateda-online.netlify.appsitemap.xml
+Sitemap: https://pateda.onlinesitemap.xml

@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on pateda.online</title>
-    <link>https://pateda-online.netlify.app/categories/</link>
+    <link>https://pateda.online/categories/</link>
     <description>Recent content in Categories on pateda.online</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://pateda-online.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://pateda.online/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bag</title>
-      <link>https://pateda-online.netlify.app/categories/bag/</link>
+      <link>https://pateda.online/categories/bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pateda-online.netlify.app/categories/bag/</guid>
+      <guid>https://pateda.online/categories/bag/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hat</title>
-      <link>https://pateda-online.netlify.app/categories/hat/</link>
+      <link>https://pateda.online/categories/hat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pateda-online.netlify.app/categories/hat/</guid>
+      <guid>https://pateda.online/categories/hat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>https://pateda-online.netlify.app/categories/test/</link>
+      <link>https://pateda.online/categories/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pateda-online.netlify.app/categories/test/</guid>
+      <guid>https://pateda.online/categories/test/</guid>
       <description></description>
     </item>
     

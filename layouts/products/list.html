@@ -1,8 +1,8 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <div class="posts">
+  <div class="grid-container">
     {{ range .Pages }}
-      <div class="post">
+      <div class="grid-item">
         {{ $image := resources.Get .Params.image }}
         {{ if $image }}
         {{ $image := $image.Resize "200x" }}    
