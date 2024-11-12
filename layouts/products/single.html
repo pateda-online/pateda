@@ -1,18 +1,18 @@
 {{ define "main" }}
-  <article class="post">
-    <!-- Display the title -->
-    <h1>{{ .Title }}</h1>
 
-    <!-- Display the summary -->
-    <p class="summary">{{ .Params.summary }}</p>
+<section class="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="thumbnail">
     {{ $image := resources.Get .Params.image }}
     {{ if $image }}
       {{ $image := $image.Resize "400x" }}
       <img src="{{ $image.Permalink }}" alt="{{ .Title }}">
     {{ end }}
-    <!-- Display the main content of the post -->
+    </div>
+
     <div class="content">
       {{ .Content }}
     </div>
-  </article>
+  </section>
 {{ end }}
