@@ -11,7 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://localhost/about/</guid>
-      <description>this is about page test</description>
+      <description>&lt;p&gt;this is about page test&lt;/p&gt;
+</description>
     </item>
     
   </channel>
