@@ -1,6 +1,6 @@
 ---
 title: "docker_hat.ptd"
-categories: [hat]
+categories: [wallet]
 summary: "pateda docker hat"
 image: /images/docker_hat/docker.jpg
 ---

@@ -35,11 +35,11 @@ url = "/products/"
 weight = 40
 
 [[menus.main]]
-pageref = "about"
 name = "about"
+url = "/about/"
 weight = 70
 
 [[menus.main]]
-pageref = "contact"
 name = "contact"
+url = "/contact/"
 weight = 80

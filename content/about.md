@@ -1,6 +1,6 @@
 ---
 title: "about"
-categories: [test]
+categories: []
 ---
 
 this is about page test
