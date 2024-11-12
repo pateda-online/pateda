@@ -36,10 +36,10 @@ weight = 40
 
 [[menus.main]]
 name = "about"
-url = "/about/"
+url = "/about"
 weight = 70
 
 [[menus.main]]
 name = "contact"
-url = "/contact/"
+url = "/contact"
 weight = 80
