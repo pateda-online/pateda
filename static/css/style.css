@@ -208,10 +208,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
-}
-.header img{
-  width: 150px;
+  justify-content:start;
 }
 .header .menu { justify-content: center; align-items: center; }
 .header .site-title { text-align: center; }
