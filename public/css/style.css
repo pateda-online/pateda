@@ -173,8 +173,14 @@ body {
   justify-content: center;
 }
 .header-wrapper img{
-  width:80px;
+  width: 80px;
   height: 80px;
+}
+.rotate{
+  transition: transform 0.5s ease;
+}
+.rotate:hover{
+  transform: rotate(360deg);
 }
 /* let footer stay at bottom of screen */
 .footer {
