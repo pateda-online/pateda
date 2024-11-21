@@ -172,7 +172,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.header-wrapper img{
+  width:80px;
+  height: 80px;
+}
 /* let footer stay at bottom of screen */
 .footer {
   margin-top: auto;
