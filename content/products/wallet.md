@@ -1,6 +1,6 @@
 ---
 title: "wallet.ptd"
-categories: [bag]
+categories: [wallets]
 summary: "cargo bag"
 image: /images/wallet/wallet.jpg
 ---

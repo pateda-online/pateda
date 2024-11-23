@@ -4,7 +4,6 @@
     {{ if trim .Content " \n" }}
         <div class="content archive-hint">{{ .Content }}</div>
     {{ end }}
-
     <section id="archive">
         {{ range .Data.Pages.GroupByDate "2006" }}
             <div class="group">

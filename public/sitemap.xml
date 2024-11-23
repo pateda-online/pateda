@@ -2,11 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://pateda.online/products/</loc>
-  </url><url>
     <loc>https://pateda.online/about/</loc>
   </url><url>
-    <loc>https://pateda.online/categories/bag/</loc>
+    <loc>https://pateda.online/categories/bags/</loc>
   </url><url>
     <loc>https://pateda.online/products/cargo_bag/</loc>
   </url><url>
@@ -18,10 +16,12 @@
   </url><url>
     <loc>https://pateda.online/</loc>
   </url><url>
+    <loc>https://pateda.online/products/</loc>
+  </url><url>
     <loc>https://pateda.online/tags/</loc>
   </url><url>
-    <loc>https://pateda.online/categories/wallet/</loc>
-  </url><url>
     <loc>https://pateda.online/products/wallet/</loc>
+  </url><url>
+    <loc>https://pateda.online/categories/wallets/</loc>
   </url>
 </urlset>

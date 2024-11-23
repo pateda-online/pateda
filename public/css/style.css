@@ -23,7 +23,7 @@
 /* defines dark color */
 :root {
   --color-dark-bg-page: #202124;
-  --color-dark-bg-content: rgba(38, 38, 40, 0.4);
+  --color-dark-bg-content: rgba(38, 38, 40, 0.2);
   --color-dark-bg-block: #2B2B2B;
   --color-dark-bg-shadow: #505050;
   --color-dark-fg-font-normal: #C2C2B6;

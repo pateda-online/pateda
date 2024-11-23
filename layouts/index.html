@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <div class="max-wrapper">
+    <div class="home">
     <div class="single">
     <div class="title">
     {{ $index := .Site.GetPage "_index.md" }}
@@ -8,6 +9,7 @@
     {{ $index.Content | safeHTML  }}
     {{ end }}
     </div>
+</div>
 </div>
 </div>
 {{ end }}

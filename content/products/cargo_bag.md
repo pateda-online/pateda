@@ -1,6 +1,6 @@
 ---
 title: "cargo_bag.ptd"
-categories: [bag]
+categories: [bags]
 summary: "cargo bag"
 image: /images/cargo_bag/cargo_bag.jpg
 ---
