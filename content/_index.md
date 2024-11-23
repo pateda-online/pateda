@@ -1,4 +1,8 @@
 ---
-
+title: "home"
+kind: home
+image: /images/transparent@4x.png
 ---
-this is not a store but a blog-like website, you can look around for more details on each item and/or learn some stuff 
+
+this is not a store.
+here you will find detailed documentation on the stuff i make.

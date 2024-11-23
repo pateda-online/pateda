@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* defines light color */
 :root {
@@ -19,11 +20,10 @@
   --color-light-bg-pager-current: #E4E4E4;
   --color-light-bg-pager-hover: #ECECEC;
 }
-
 /* defines dark color */
 :root {
   --color-dark-bg-page: #202124;
-  --color-dark-bg-content: #262628;
+  --color-dark-bg-content: rgba(38, 38, 40, 0.4);
   --color-dark-bg-block: #2B2B2B;
   --color-dark-bg-shadow: #505050;
   --color-dark-fg-font-normal: #C2C2B6;
@@ -39,7 +39,6 @@
   --color-dark-bg-pager-current: #3A3A3E;
   --color-dark-bg-pager-hover: #444446;
 }
-
 :root {
   --color-bg-page:                  var(--color-light-bg-page);
   --color-bg-content:               var(--color-light-bg-content);
@@ -81,14 +80,8 @@
 }
 
 :root {
-  --fonts-sans-en: "Poppins";
+  --fonts-sans-en: "Courier Prime";
   --fonts-sans: var(--fonts-sans-en), sans-serif;
-
-  --fonts-serif-en: "Poppins";
-  --fonts-serif: var(--fonts-serif-en), serif;
-
-  --fonts-mono-en: "Poppins";
-  --fonts-mono: var(--fonts-mono-en), monospace;
 
   --len-0: 0.00rem;
   --len-1: 0.25rem;
@@ -105,11 +98,13 @@
   --font-size-5: 1.500rem;
   --font-size-6: 2.000rem;
 }
-
-
+a:-webkit-any-link{
+  text-decoration: none;
+}
 *, ::before, ::after {
   font-family: inherit;
   box-sizing: border-box;
+  /* border: 1px solid red;  */
 }
 
 html {
@@ -121,7 +116,6 @@ html {
 /**************************************************************/
 /* approximately set up the layout of header, footer and main */
 /**************************************************************/
-
 body {
   display: flex;
   flex-direction: column;
@@ -132,6 +126,11 @@ body {
   align-items: center;
 
   background-color: var(--color-bg-page);
+  background-image: url("/images/background@4x.png");
+  background-repeat:no-repeat;
+  background-size: 20%;
+  background-position: center;
+  background-attachment:fixed;
 }
 
 /* set up padding and margin of some main elements */
@@ -165,19 +164,22 @@ body {
 .side-tags
 {
   background-color: var(--color-bg-content);
+  backdrop-filter: blur(10px);
 }
 
 /* place header in the center of header-wrapper */
-.header-wrapper {
+.header-wrapper{
   display: flex;
-  justify-content: center;
-}
-.header-wrapper img{
-  width: 80px;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
   height: 80px;
 }
+.header-wrapper img{
+  max-width: 70px;
+  }
 .rotate{
-  transition: transform 0.5s ease;
+  transition: transform .7s ease;
 }
 .rotate:hover{
   transform: rotate(360deg);
@@ -191,7 +193,7 @@ body {
 
 /********** set up break point **********/
 
-                             .main-wrapper, .header { max-width: 80lvw; }
+                             .main-wrapper, .header { max-width: 80%; }
 /*@media (max-width: 1199px) { .main-wrapper, .header { max-width: 80lvw; } }
 @media (max-width: 991px)  { .main-wrapper, .header { max-width: 80lvw; } }
 @media (max-width: 767px)  { .main-wrapper, .header { max-width: 80lvw; } }*/
@@ -200,7 +202,7 @@ body {
 /* size the element who has breakpoint limitation */
 /* .header, .main-wrapper, .main { width: 100vw; } */
 /* .header-wrapper, .footer { width: 100vw; } */
-.header-wrapper, .main-wrapper, .footer { width: 100vw;}
+.header-wrapper, .main-wrapper, .footer { width: 100%;}
 
 /************************/
 /* set up header layout */
@@ -241,7 +243,6 @@ body {
 /* setup hyper link style */
 .header .site-title {
   text-decoration: none;
-  font-family: var(--fonts-serif);
   font-size: var(--font-size-6);
   font-weight: bold;
 }
@@ -272,7 +273,6 @@ body {
 
 /* beautify menu item */
 .header .menu-item {
-  font-family: var(--fonts-serif);
   font-size: var(--font-size-3);
   font-weight: bold;
 }
@@ -451,40 +451,6 @@ body {
     line-height: 1.5;
 }
 
-.content code {
-  font-family: var(--fonts-mono);
-
-  background-color: var(--color-bg-block);
-
-  padding: 0 2px;
-  border: 1px solid var(--color-fg-tiny-line);
-  border-radius: 2px;
-  line-height: inherit;
-  word-wrap: break-word;
-}
-
-/* keep in style with highlighting */
-.content pre {
-  background-color: var(--color-bg-block);
-  border-radius: 3px;
-
-  /* The copy button with absolute position need this.
-   * https://developer.mozilla.org/en-US/docs/Web/CSS/position
-   * https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
-  */
-  position: relative;
-}
-
-.content pre code {
-  display: block;
-
-  padding: var(--len-3);
-  border: none;
-  background-color: unset;
-  overflow: auto;
-  width: 100%;
-}
-
 .content blockquote {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -555,7 +521,7 @@ body {
   overflow-wrap: anywhere;
 }
 .content img {
-  max-width: 92%;
+  max-width: 100%
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -579,22 +545,6 @@ body {
 }
 
 /* the copy button added by /js/copy-code-button.js */
-pre .copyCodeButton {
-  position: absolute;
-  top: var(--len-1);
-  right: var(--len-3);
-
-  font-family: var(--fonts-mono);
-  color: var(--color-fg-hyperlink);
-  cursor: pointer;
-  visibility: hidden;
-}
-pre:hover .copyCodeButton {
-  visibility: visible;
-}
-pre .copyCodeButton:hover {
-  color: var(--color-fg-hyperlink-hover);
-}
 
 /**************************/
 /* setup list page layout */

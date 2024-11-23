@@ -11,10 +11,10 @@
                 {{ block "main" . }}{{ end }}
             </div>
             <div class="side">
+                {{ partial "side-categories.html" . }}
                 {{ range .Site.Sections }}
                     {{ partial "side-recent.html" . }}
                 {{ end }}
-                {{ partial "side-categories.html" . }}
             </div>
         </main>
         {{ partial "footer.html" . }}
