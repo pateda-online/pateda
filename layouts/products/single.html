@@ -1,18 +1,15 @@
 {{ define "main" }}
-<section class="single">
-    <h1 class="title">{{ .Title }}</h1>
-
-    <div>
-    {{ $image := resources.Get .Params.image }}
-    {{ if $image }}
-      {{ $image := $image.Resize "300x" }}
-      <img src="{{ $image.Permalink }}" alt="{{ .Title }}">
-    {{ end }}
-    </div>
-
+<section class="product">
+      {{ if .Params.gallery }}
+      <div class="gallery">
+        {{ range .Params.gallery }}
+        <img src="{{ . }}" alt="Gallery Image">
+        {{ end }}
+      </div>
+      {{ end }}
     <div class="content">
+      <h1 class="title">{{ .Title }}</h1>
       {{ .Content }}
-      <p>test</p>
     </div>
   </section>
 {{ end }}

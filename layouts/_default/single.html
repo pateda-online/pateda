@@ -2,17 +2,6 @@
 
 <section class="single">
     <h1 class="title">{{ .Title }}</h1>
-
-    <div class="taxonomies">
-        {{ with .Params.categories }}
-        <div>
-            Categories:
-            {{ range . }}
-                <a href="{{ "categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-        </div>
-        {{ end }}
-    </div>
     <div class="content">
         {{ .Content }}
     </div>

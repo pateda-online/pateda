@@ -3,14 +3,14 @@
   <div class="grid-container">
     {{ range .Pages }}
       <div class="grid-item">
-        {{ $image := resources.Get .Params.image }}
+        {{/*  {{ $image := resources.Get .Params.image }}
         {{ if $image }}
-        {{ $image := $image.Resize "200x" }}    
+        {{ $image := $image.Resize "200x" }}      */}}
         <a href="{{ .Permalink }}">
-        <img src="{{ $image.Permalink }}" alt="{{ .Title }}">
+        {{/*  <img src="{{ $image.Permalink }}" alt="{{ .Title }}">  */}}
         <h3>{{ .Title }}</h3>
       </a>
-      {{ end }}
+      {{/*  {{ end }}  */}}
       </div>
     {{ end }}
   </div>
