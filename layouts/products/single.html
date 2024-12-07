@@ -1,21 +1,21 @@
 {{ define "main" }}
 <section class="product">
   <div class="gallery-wrapper">
-    {{ if .Params.image }}
-    <div class="main-image">
-      <img src="{{  .Params.image }}">
-    </div>
+    {{ with (index .Params.gallery 0) }}
+      <img src="{{ . }}" alt="First Image">
     {{ end }}
   {{ if .Params.gallery }}
   <div class="gallery">
-    {{ range .Params.gallery }}
-      <img src="{{ . }}" alt="Gallery Image">
+    {{ range after 1 .Params.gallery }}
+    {{/*  {{ printf "Image URL: %s" . }}  */}}
+    <img src="{{ . }}" alt="Gallery Image">
+
     {{ end }}
   {{ end }}
   </div>
 </div>
-  <div class="content">
-    <h1 class="title">{{ .Title }}</h1>
+<div class="content">
+  <h1 class="title">{{ .Title }}</h1>
     {{ .Content }}
   </div>
 </section>

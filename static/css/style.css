@@ -103,24 +103,16 @@ a:-webkit-any-link{
   box-sizing: border-box;
   /* border: 1px solid var(--color-dark-fg-font-hover);  */
 }
-
 html {
   font-family: var(--fonts-sans);
   color: var(--color-fg-font-normal);
 }
-
-/**************************************************************/
-/* approximately set up the layout of header, footer and main */
-/**************************************************************/
 body {
   display: flex;
   flex-direction: column;
-
   min-height: 100vh;
   margin: 0;
-
   align-items: center;
-
   background-color: var(--color-bg-page);
   background-image: url("/images/site_bg.webp");
   background-repeat:no-repeat;
@@ -128,31 +120,25 @@ body {
   background-position: center;
   background-attachment:fixed;
 }
-
-/* set up padding and margin of some main elements */
 .main-wrapper {
   margin-top: var(--len-5);
   margin-bottom: var(--len-5);
+  display: flex; 
+  flex-wrap: wrap;
 }
-
-.main-wrapper { display: flex; flex-wrap: wrap; }
 .main-wrapper > * { height: fit-content; }
-
-.main { padding: var(--len-4); }
-.main { flex: 0 0 100%; width: 100%; }
-
-/* mobile layout: place side to bottom */
-
-
-/* set light background */
+.main { 
+  padding: var(--len-4); 
+  flex: 0 0 100%; 
+  width: 100%;
+}
+/*background */
 .header-wrapper,
 .footer,
-.main
-{
+.main{
   background-color: var(--color-bg-content);
   backdrop-filter: blur(10px);
 }
-
 /* place header in the center of header-wrapper */
 .header-wrapper, .header-wrapper a{
   display: flex;
@@ -181,7 +167,6 @@ body {
   padding: var(--len-3);
   width: 100%;
 }
-/*@media (max-width: 1199px) { .main-wrapper, .header { max-width: 80lvw; } }*/
 
 /* place title and menus horizonally */
 .header {
@@ -263,7 +248,8 @@ body {
 /**********************************/
 .grid-container {
   display: flex;              
-  flex-wrap: wrap;               
+  flex-wrap: wrap; 
+  justify-content: space-between;              
   gap:var(--len-3);           
 }
 .grid-item {
@@ -272,7 +258,7 @@ body {
   /* outline: 3px solid var(--test); */
   box-shadow: -10px 10px 0 -5px var(--color-fg-font-normal);
   padding: var(--len-2);
-  width: 25%;
+  width: 30%;
   transition: transform .2s ease-out;
 }
 .grid-item h3{
@@ -299,7 +285,6 @@ body {
   flex-wrap: wrap;
   justify-content: start;
   align-items: flex-start;
-
   font-size: var(--font-size-1);
   color: var(--color-fg-font-quote);
 }
@@ -380,9 +365,11 @@ body {
 }
 .gallery-wrapper{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   max-width: 60%;
   justify-content: center;
+  align-content: center;
 }
 .gallery-wrapper img{
   display: flex;
@@ -499,9 +486,53 @@ body {
   max-width: 100%;
   overflow-x: auto;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-/* the copy button added by /js/copy-code-button.js */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+}
 
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 /**************************/
 /* setup list page layout */
 /**************************/
@@ -544,33 +575,6 @@ body {
   padding: 4px 7px;
   font-size: var(--font-size-1);
   margin-right: 3px;
-}
-
-/**********************/
-/* setup terms layout */
-/**********************/
-
-#tags {
-  max-width: 700px;
-  margin: 48px auto 0 auto;
-  padding: 0 12px;
-  text-align: center;
-}
-#tags .tag {
-  display: inline-block;
-  margin: 7px 7px;
-}
-
-#tags .tag a {
-  background: #f2f2f2;
-  padding: 4px 7px;
-  color: #757575;
-  color: #404040;
-  font-size: 14px;
-  margin-right: 3px;
-}
-#tags .tag a:hover {
-  color: #0366d6;
 }
 
 /***************************/

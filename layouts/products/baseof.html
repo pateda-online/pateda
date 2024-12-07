@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body>
+        {{ partial "header.html" . }}
+        {{ partial "modal.html" . }}
+        <main class="main-wrapper">
+            <div class="main">
+                {{ block "main" . }}{{ end }}
+            </div>
+        </main>
+        {{ partial "footer.html" . }}
+    </body>
+</html>
