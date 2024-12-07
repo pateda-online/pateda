@@ -20,7 +20,8 @@
 }
 /* defines dark color */
 :root {
-  --color-dark-bg-page: #202124;
+  --color-dark-bg-page: rgb(20,20,20);
+  --test:rgb(30,30,30);
   --color-dark-bg-content: rgba(38, 38, 40, 0.2);
   --color-dark-bg-block: #2B2B2B;
   --color-dark-bg-shadow: #505050;
@@ -55,7 +56,6 @@
   --color-bg-pager-current:         var(--color-light-bg-pager-current);
   --color-bg-pager-hover:           var(--color-light-bg-pager-hover);
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg-page:                var(--color-dark-bg-page);
@@ -76,7 +76,6 @@
     --color-bg-pager-hover:         var(--color-dark-bg-pager-hover);
   }
 }
-
 :root {
   --fonts-sans-en: "IBM Plex Mono";
   --fonts-sans: var(--fonts-sans-en), sans-serif;
@@ -155,14 +154,14 @@ body {
 }
 
 /* place header in the center of header-wrapper */
-.header-wrapper{
+.header-wrapper, .header-wrapper a{
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
   align-content: center;
-  height: 80px;
 }
 .header-wrapper img{
+  padding: 5px;
   max-width: 70px;
   }
 .rotate{
@@ -178,35 +177,11 @@ body {
 }
 .header-wrapper, .main-wrapper, .footer { width: 100%;}
 .header, .main-wrapper { max-width: 80%; }
-/*@media (max-width: 1199px) { .main-wrapper, .header { max-width: 80lvw; } }*/
-@media (max-width: 991px) {
-  .main { padding: var(--len-4); }
-  .main { flex: 0 0 100%; width: 100%; }
-}
-@media (max-width: 767px) {
-  .header .site-title {
-    padding-top: var(--len-4);
-
-    flex: 0 0 100%;
-  }
-
-  .header .menu {
-    flex-wrap: wrap;
-    flex: 0 0 100%;
-
-    margin-top: var(--len-3);
-    padding-top: var(--len-3);
-    border-top: 1px solid var(--color-fg-tiny-line);
-  }
-}
-@media (max-width: 575px) { 
-  .main-wrapper, .header { max-width: none; } 
-}
-
 .header {
   padding: var(--len-3);
   width: 100%;
 }
+/*@media (max-width: 1199px) { .main-wrapper, .header { max-width: 80lvw; } }*/
 
 /* place title and menus horizonally */
 .header {
@@ -287,26 +262,37 @@ body {
 /* set up home page's list layout */
 /**********************************/
 .grid-container {
-  display: flex;                 
+  display: flex;              
   flex-wrap: wrap;               
-  gap:var(--len-3);                           
-  max-width: 800px;           
+  gap:var(--len-3);           
 }
 .grid-item {
-  flex:1 0 30%;            
-  max-width: 30%;                
-  box-sizing:content-box;            
-  display: flex;                 
-  align-items: center;
-  justify-content: center;
-  background-color:var(--color-bg-page);
+  background-color:var(--test);
+  border: var(--len-1) solid rgba(20,20,20,1);
+  /* outline: 3px solid var(--test); */
+  box-shadow: -10px 10px 0 -5px var(--color-fg-font-normal);
+  padding: var(--len-2);
+  width: 25%;
+  transition: transform .2s ease-out;
 }
-  .grid-item h3{
-  background-color: var(--color-bg-page);
+.grid-item h3{
+  background-color:inherit;
   color: var(--color-light-fg-marker-quote);
   align-items:center;
   justify-content:end;
-  text-decoration-line: none;
+}
+.grid-item img{
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--len-1);
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--len-2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid-item:hover{
+  transform: scale(1.01, 1.01);
 }
 .list-item .tips {
   display: flex;
@@ -392,26 +378,39 @@ body {
   margin: var(--len-2) 0 var(--len-3) 0;
   font-size: var(--font-size-6);
 }
-
-.gallery {
+.gallery-wrapper{
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
   max-width: 60%;
   justify-content: center;
 }
-
-.gallery img {
-  max-width: 80%;
+.gallery-wrapper img{
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--len-1);
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform .2s ease-out;
 }
-
-
+.gallery-wrapper img:hover{
+  transform: scale(1.01, 1.01);
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img{
+  max-width: 50%;
+  height: auto;
+}
 /***** set up content style *****/
 .content {
     line-height: 1.5;
+    padding-left: var(--len-4);
 }
 
 .content blockquote {
@@ -461,7 +460,7 @@ body {
   font-weight: bold;
   color: #444;
   cursor: default;
-  white-space: nowrap;
+  white-space: nonowrap;
   border: 1px solid #dadadc;
 }
 
@@ -560,15 +559,6 @@ body {
 #tags .tag {
   display: inline-block;
   margin: 7px 7px;
-}
-@media (max-width: 700px) {
-  #tags {
-    margin: 0 auto 0 auto;
-  }
-  #tags .tag {
-    display: inline-block;
-    margin: 4px 5px;
-  }
 }
 
 #tags .tag a {

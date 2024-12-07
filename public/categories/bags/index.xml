@@ -11,8 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pateda.online/products/cargo_bag/</guid>
-      <description>&lt;p&gt;this is pateda cargo bag&lt;/p&gt;
-</description>
+      <description>&lt;h2 id=&#34;test&#34;&gt;test &lt;a href=&#34;#test&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;this is test&lt;/p&gt;
+&lt;h2 id=&#34;test2&#34;&gt;test2 &lt;a href=&#34;#test2&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;</description>
     </item>
     
   </channel>

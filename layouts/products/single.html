@@ -1,15 +1,22 @@
 {{ define "main" }}
 <section class="product">
-      {{ if .Params.gallery }}
-      <div class="gallery">
-        {{ range .Params.gallery }}
-        <img src="{{ . }}" alt="Gallery Image">
-        {{ end }}
-      </div>
-      {{ end }}
-    <div class="content">
-      <h1 class="title">{{ .Title }}</h1>
-      {{ .Content }}
+  <div class="gallery-wrapper">
+    {{ if .Params.image }}
+    <div class="main-image">
+      <img src="{{  .Params.image }}">
     </div>
-  </section>
+    {{ end }}
+  {{ if .Params.gallery }}
+  <div class="gallery">
+    {{ range .Params.gallery }}
+      <img src="{{ . }}" alt="Gallery Image">
+    {{ end }}
+  {{ end }}
+  </div>
+</div>
+  <div class="content">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</section>
 {{ end }}
