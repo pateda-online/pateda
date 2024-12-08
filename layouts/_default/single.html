@@ -5,6 +5,10 @@
     <div class="content">
         {{ .Content }}
     </div>
+    {{ if eq .File.BaseFileName "contact" }}
+        {{ partial "contact.html" . }}
+    {{ end }}
+
 </section>
 
 {{ end }}

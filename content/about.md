@@ -4,11 +4,13 @@ categories: []
 ---
 
 # about pateda
-pateda (πατέντα) was created as a maker mark, so I can put my signature on the stuff I make. Currently focused on garments and fashion-related accessories(bags, wallets ect)
+pateda (πατέντα) was created as a maker mark, so I can put my signature on the stuff I make. Currently focused on garments and fashion-related accessories(bags, wallets ect). 
 
 # about me
 
-Hi! I'm Petros, and here's some info about me. I'm 22 years old and live in Thessaloniki. Tinkering has always been a passion of mine. Sometimes I try to fix an already broken item, and other times I end up breaking something that was perfectly fine—but I’ve always found it fascinating. Over time, I began solving problems in ways that added a personal touch to my work.
+tl;dr: I'm Petros and I like to make stuff.
+
+Hi! I'm Petros. I'm 22 years old and live in Thessaloniki. Tinkering has always been a passion of mine. Sometimes I try to fix an already broken item, and other times I end up breaking something that was perfectly fine—but I’ve always found it fascinating. Over time, I began solving problems in ways that added a personal touch to my work.
 
 I was heavily inspired by countless hours of YouTube videos about woodworking during my teenage years. This led me to start fixing things around the house and eventually buying hand tools for woodworking. I began using reclaimed wood (from pallets, etc.) to make small boxes, shelves, and trays on my balcony.
 
