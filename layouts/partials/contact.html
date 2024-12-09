@@ -1,17 +1,17 @@
 <form name="contact" method="POST" netlify>
-    <p>
-      <label>name: <input type="text" name="name" /></label>
+    <p class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" />
+    </p>
+    <p class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" />
+    </p>
+    <p class="form-group">
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
     </p>
     <p>
-      <label>e-mail: <input type="email" name="email" /></label>
-    </p>
-    <p>
-    </p>
-    <p>
-      <label>message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">send</button>
+      <button type="submit"><h2>Send</h2></button>
     </p>
   </form>
-  
