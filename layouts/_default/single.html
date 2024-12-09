@@ -1,12 +1,11 @@
 {{ define "main" }}
-
 <section class="single">
     <h1 class="title">{{ .Title }}</h1>
     <div class="content">
-        {{ .Content }}
         {{ if eq .File.BaseFileName "contact" }}
             {{ partial "contact.html" . }}
         {{ end }}
+        {{ .Content }}
     </div>
 
 </section>

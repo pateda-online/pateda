@@ -1,17 +1,22 @@
-<form name="contact" method="POST" netlify>
+<div class="popup" id="success">
+    <h1>success!</h1>
+    <p>thank you! your submission was successful.</p>
+    <button id="close-popup"><h3>okay</h3></button>
+</div>
+<form name="contact" method="POST" action="/contact#success" netlify>
     <p class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" />
+      <label for="name">name:</label>
+      <input type="text" name="name" id="name" required/>
     </p>
     <p class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" name="email" id="email" />
+      <label for="email">e-mail:</label>
+      <input type="email" name="email" id="email" required/>
     </p>
     <p class="form-group">
-      <label for="message">Message:</label>
-      <textarea name="message" id="message"></textarea>
+      <label for="message">message:</label>
+      <textarea name="message" id="message" required></textarea>
     </p>
     <p>
-      <button type="submit"><h2>Send</h2></button>
+      <button type="submit"><h2>send</h2></button>
     </p>
   </form>

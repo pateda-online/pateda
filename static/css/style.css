@@ -277,7 +277,9 @@ body {
   border-radius: var(--len-2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.grid-item:hover{
+.grid-item:hover,
+.gallery-wrapper img:hover,
+button:hover{
   transform: scale(1.01, 1.01);
 }
 .list-item .tips {
@@ -374,15 +376,15 @@ body {
 .gallery-wrapper img{
   display: flex;
   flex-wrap: wrap;
-  padding: var(--len-1);
+  /* padding: var(--len-1); */
+  margin: var(--len-1);
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px; */
+  border: var(--len-1) solid rgba(20,20,20,1);
+  box-shadow: -10px 10px 0 -7px var(--color-fg-font-normal);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   transition: transform .2s ease-out;
-}
-.gallery-wrapper img:hover{
-  transform: scale(1.01, 1.01);
 }
 .gallery {
   display: flex;
@@ -391,7 +393,7 @@ body {
   justify-content: center;
 }
 .gallery img{
-  max-width: 50%;
+  max-width: 48%;
   height: auto;
 }
 /***** set up content style *****/
@@ -536,25 +538,15 @@ body {
 /**************************/
 /* setup list page layout */
 /**************************/
-
-/* form{
-  display: flex;
-  flex-direction: column;
-  width: 80%; 
-  align-content: center;  
-} */
-
 form .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem; 
 }
-
 form label {
   margin-bottom: 0.5rem; 
   font-weight: bold;     
 }
-
 form input,
 form textarea {
   padding: 0.5rem;
@@ -564,12 +556,10 @@ form textarea {
   font-size: 1rem;
   color: var(--color-fg-font-normal);
 }
-
 form textarea {
   resize: vertical;
 }
-
-form button{
+button{
   background-color: rgba(194,194,182,0.1);
   border: var(--len-1) solid rgba(20,20,20,1);
   box-shadow: -10px 10px 0 -5px rgba(194,194,182,0.85);
@@ -577,13 +567,21 @@ form button{
   width: 100%;  
   transition: transform .2s ease-out;
 }
-form button:hover{
-  transform: scale(1.01, 1.01);
+.popup{
+  display:none;
+  position:fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--len-1) solid rgba(20,20,20,1);
+  box-shadow: -10px 10px 0 -5px rgba(194,194,182,0.85);
+  background: var(--test);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
 }
 #archive {
   padding-left: var(--len-3);
 }
-
 #archive .group {
   margin: var(--len-4) auto;
 }
@@ -627,7 +625,6 @@ form button:hover{
 .pagination {
   width: 100%;
   text-align: center;
-
   padding-top: var(--len-5);
 }
 
