@@ -7,13 +7,12 @@
   {{ if .Params.gallery }}
   <div class="gallery">
     {{ range after 1 .Params.gallery }}
-    {{/*  {{ printf "Image URL: %s" . }}  */}}
     <img src="{{ . }}" alt="Gallery Image">
-
     {{ end }}
   {{ end }}
-  </div>
+  </div>  
 </div>
+
 <div class="content">
   <h1 class="title">{{ .Title }}</h1>
     {{ .Content }}

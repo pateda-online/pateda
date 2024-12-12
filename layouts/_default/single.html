@@ -2,11 +2,11 @@
 <section class="single">
     <h1 class="title">{{ .Title }}</h1>
     <div class="content">
-        {{ if eq .File.BaseFileName "contact" }}
-            {{ partial "contact.html" . }}
-        {{ end }}
         {{ .Content }}
     </div>
+    {{ if eq .File.BaseFileName "contact" }}
+        {{ partial "contact.html" . }}
+    {{ end }}
 
 </section>
 

@@ -2,9 +2,9 @@
 @media (max-width: 991px) {
     .main { padding: var(--len-4); }
     .main { flex: 0 0 100%; width: 100%; }
-      .grid-item {   
-          width: 48%;
-        }
+    .grid-item { width: 48%; }
+    .form-wrapper {padding: 0 20%;}
+
 }
 @media (max-width: 767px) {
     .header .site-title {
@@ -72,4 +72,5 @@
         justify-content: center;
         background-color:var(--test);
       }
+      .form-wrapper {padding: 0 10%;}
   }

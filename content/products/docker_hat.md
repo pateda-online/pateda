@@ -2,9 +2,11 @@
 title: "docker_hat.ptd"
 categories: [wallets]
 summary: "pateda docker hat"
-image: /images/docker_hat/docker.jpg
 gallery: 
- - /images/wallet/wallet.jpg
+ - /images/docker_hat/docker.jpg
+ - /images/docker_hat/docker.jpg
+ - /images/docker_hat/docker.jpg
+ - /images/docker_hat/docker.jpg
  - /images/docker_hat/docker.jpg
 ---
 
